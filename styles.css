@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  width: 80px;
+  width: 8%;
   height: 100vh;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -31,27 +31,34 @@ header {
   z-index: 10;
 }
 
-.menu ul {
+.logo {
+  position: absolute;
+  top: 1%;
+  width: 8%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.icones {
+  position: absolute;
+  left: 3%;
+}
+
+.icones ul {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  align-items: center;
+  gap: 20px;
 }
 
-.menu ul li {
-  transform: rotate(-90deg);
+.icones a {
+  color: rgb(161, 161, 161);
+  font-size: 30px;
 }
 
-.menu ul li a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  display: block;
-  transition: 0.3s;
-}
-
-.menu ul li a:hover {
+.icones a:hover {
   color: white;
 }
 
@@ -121,4 +128,28 @@ main {
   font-weight: 900;
   line-height: 1;
   font-style: italic;
+}
+
+.menu {
+  position: absolute;
+  top: 5%;
+}
+
+.menu ul {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-items: center;
+}
+
+.menu ul a {
+  color: white;
+  font-weight: 900;
+  line-height: 1;
+  font-style: italic;
+}
+
+.menu ul a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
 }
