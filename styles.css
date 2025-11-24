@@ -31,19 +31,20 @@ header {
 
 .logo {
   position: absolute;
-  top: 0;
-  right: 5%;
+  top: 6%;
+  right: 9%;
   width: 8%;
 }
 
 .logo img {
-  width: 100%;
+  width: 150%;
   height: auto;
 }
 
 .icones {
   position: absolute;
   left: 3%;
+  top: 68%;
 }
 
 .icones ul {
@@ -79,10 +80,10 @@ main {
 
 .titulo {
   position: absolute;
-  top: 40%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -60%);
-  font-size: 15vw;
+  font-size: 14vw;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.03);
   text-transform: uppercase;
@@ -106,13 +107,14 @@ main {
   display: block;
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.6));
   transform: translateX(5%);
-  margin-bottom: -120px;
-  margin-left: -50px;
+  margin-bottom: -100px;
+  margin-left: -100px;
 }
 
 .info-texto {
   color: white;
-  margin-left: -100px;
+  margin-left: -10px;
+  margin-bottom: 60px;
 }
 
 .info-texto h2 {
@@ -153,10 +155,10 @@ main {
   position: relative;
 }
 
-.quadrado-interno {
-  width: 14px;
-  height: 14px;
-  background-color: #c0a060;
+.bx-menu-left {
+  font-size: 25px;
+  padding-top: 8px;
+  color: white;
 }
 
 .icone-topo::after {
@@ -198,7 +200,8 @@ main {
 
 .menu {
   position: absolute;
-  top: 5%;
+  top: 6%;
+  left: 10%;
 }
 
 .menu ul {
@@ -213,6 +216,7 @@ main {
   font-weight: 900;
   line-height: 1;
   font-style: italic;
+  font-size: 18px;
 }
 
 .menu ul a:hover {
@@ -222,8 +226,8 @@ main {
 
 .container-especificacoes {
   position: absolute;
-  bottom: 110px;
-  right: 2%;
+  top: 75%;
+  right: 5%;
   display: flex;
   gap: 60px;
   z-index: 10;
@@ -256,4 +260,86 @@ main {
   font-size: 14px;
   margin-left: 3px;
   font-weight: 600;
+}
+
+.guia {
+  position: absolute;
+  right: 5%;
+  top: 65%;
+}
+
+.botao {
+  border-radius: 7px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.botao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+
+.botao:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.botao a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 50px;
+}
+
+.botao:hover a {
+  color: black;
+}
+
+.bx-chevron-right {
+  font-size: 20px;
+}
+
+.direitos {
+  position: absolute;
+  right: 5%;
+  bottom: 100px;
+  z-index: 5;
+}
+
+.direitos p {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.direitos strong {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.direitos .detalhe {
+  font-size: 9px;
+  font-style: italic;
 }
