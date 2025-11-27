@@ -101,41 +101,33 @@ main {
   max-width: 1200px;
 }
 
-/* O container que segura as duas imagens */
 .container-carro {
   position: relative;
   width: 100%;
-  /* Mantive a centralização que você usava antes */
   margin-left: 50%;
+  margin-top: -200px;
   transform: translateX(-50%);
-  /* IMPORTANTE: Define uma proporção para o container não ficar com altura zero. 
-     Ajuste se suas imagens forem mais altas ou mais baixas. */
-  aspect-ratio: 2 / 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
 }
 
-/* Estilo comum para as duas imagens */
 .carro-fade {
-  position: absolute; /* Faz elas flutuarem uma sobre a outra */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   display: block;
-
-  /* A mágica da transição suave */
   transition: opacity 0.5s ease-in-out;
-
-  /* Trouxe a sombra que estava no antigo .carro para cá */
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.1));
 }
 
-/* Estado visível */
 .carro-fade.ativo {
   opacity: 1;
   z-index: 2;
 }
 
-/* Estado invisível */
 .carro-fade.inativo {
   opacity: 0;
   z-index: 1;
@@ -143,8 +135,9 @@ main {
 
 .info-texto {
   position: absolute;
-  top: 100%;
-  left: 0%;
+  top: 73%;
+  left: 5%;
+  z-index: 8;
 }
 
 .info-texto h2 {
@@ -152,6 +145,7 @@ main {
   font-weight: 700;
   color: #ccc;
   margin-bottom: 5px;
+  padding-left: 10px;
   letter-spacing: 2px;
 }
 
@@ -172,7 +166,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
 }
 
 .icone-topo {
@@ -184,12 +177,21 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.icone-topo:hover {
+  border-color: white;
+  transform: scale(1.1);
 }
 
 .bx-menu-left {
-  font-size: 25px;
-  padding-top: 8px;
   color: white;
+  font-size: 2em;
+  padding-top: 5px;
 }
 
 .icone-topo::after {
@@ -199,8 +201,9 @@ main {
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: 120px;
   background-color: rgba(255, 255, 255, 0.2);
+  height: 0px;
+  transition: height 0.5s ease-in-out;
 }
 
 .lista-cores {
@@ -208,6 +211,22 @@ main {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
+  margin-top: 0px;
+}
+
+.barra-progresso.aberto .icone-topo::after {
+  height: 120px;
+}
+
+.barra-progresso.aberto .lista-cores {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  margin-top: 140px;
 }
 
 .cor {
@@ -295,7 +314,7 @@ main {
 
 .guia {
   position: absolute;
-  left: 4%;
+  right: 5%;
   top: 85%;
 }
 
@@ -353,13 +372,13 @@ main {
 
 .direitos {
   position: absolute;
-  right: 5%;
+  left: 13%;
   bottom: 100px;
   z-index: 5;
 }
 
 .direitos p {
-  font-size: 10px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.3);
   font-family: sans-serif;
   letter-spacing: 0.5px;
@@ -371,6 +390,6 @@ main {
 }
 
 .direitos .detalhe {
-  font-size: 9px;
+  font-size: 11px;
   font-style: italic;
 }
