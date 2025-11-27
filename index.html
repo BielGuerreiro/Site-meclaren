@@ -32,15 +32,35 @@
           </div>
 
           <ul class="lista-cores">
-            <li class="cor" style="background-color: #6a0dad"></li>
+            <li
+              class="cor ativo"
+              style="background-color: #ffffff"
+              data-cor="img/branco 2.webp"
+            ></li>
 
-            <li class="cor ativo" style="background-color: #ff0000"></li>
+            <li
+              class="cor roxo"
+              style="background-color: #6a0dad"
+              data-cor="img/roxo 2.png"
+            ></li>
 
-            <li class="cor" style="background-color: #ff8c00"></li>
+            <li
+              class="cor azul"
+              style="background-color: #25b5e0"
+              data-cor="img/azul 2.png"
+            ></li>
 
-            <li class="cor" style="background-color: #ffffff"></li>
+            <li
+              class="cor vermelho"
+              style="background-color: #ff0000"
+              data-cor="img/vermelho 2.png"
+            ></li>
 
-            <li class="cor" style="background-color: #000000"></li>
+            <li
+              class="cor preto"
+              style="background-color: #000000"
+              data-cor="img/preto 2.png"
+            ></li>
           </ul>
         </div>
 
@@ -76,7 +96,15 @@
         <span class="titulo">MECLAREN</span>
 
         <div class="container-principal">
-          <img class="carro" src="img/branco 2.webp" alt="McLaren 750S" />
+          <div class="container-carro">
+            <img
+              class="carro-fade ativo"
+              src="img/branco 2.webp"
+              alt="McLaren 750S"
+            />
+
+            <img class="carro-fade inativo" src="" alt="McLaren 750S" />
+          </div>
 
           <div class="info-texto">
             <h2>750S SPIDER</h2>
@@ -127,5 +155,6 @@
         >
       </p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
