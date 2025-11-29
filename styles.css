@@ -431,6 +431,7 @@ main {
   color: white;
   font-size: 30px;
   transition: 0.3s;
+  pointer-events: none;
 }
 
 .menu-lateral-direita.aberto .botao-toggle {
@@ -522,4 +523,10 @@ main {
 .numeros-arco li:hover {
   color: #ff0000;
   transform: scale(1.3) !important;
+}
+
+.numeros-arco li.selecionado {
+  color: #ff0000;
+  transform: scale(1.3);
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
