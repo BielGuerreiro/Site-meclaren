@@ -1,3 +1,10 @@
+const botaoToggleDireita = document.querySelector(".botao-toggle");
+const menuLateralDireita = document.querySelector(".menu-lateral-direita");
+
+botaoToggleDireita.addEventListener("click", () => {
+  menuLateralDireita.classList.toggle("aberto");
+});
+
 const iconeTopo = document.querySelector(".icone-topo");
 const barraProgresso = document.querySelector(".barra-progresso");
 
