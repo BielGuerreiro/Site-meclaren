@@ -60,6 +60,7 @@ header {
 
 .icones a:hover {
   color: white;
+  transition: 0.4s;
 }
 
 main {
@@ -81,7 +82,7 @@ main {
 .titulo {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 47%;
   transform: translate(-50%, -60%);
   font-size: 14vw;
   font-weight: 900;
@@ -104,7 +105,7 @@ main {
 .container-carro {
   position: relative;
   width: 100%;
-  margin-left: 50%;
+  margin-left: 45%;
   margin-top: -200px;
   transform: translateX(-50%);
   pointer-events: none;
@@ -158,11 +159,11 @@ main {
 }
 
 .barra-progresso {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
+  position: fixed;
+  left: 4%;
+  top: 5%;
   transform: translateX(-50%);
-  margin-bottom: 150px;
+  margin-bottom: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +173,6 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,8 +276,8 @@ main {
 
 .container-especificacoes {
   position: absolute;
-  top: 75%;
-  right: 5%;
+  top: 76%;
+  right: 15%;
   display: flex;
   gap: 60px;
   z-index: 10;
@@ -314,7 +314,7 @@ main {
 
 .guia {
   position: absolute;
-  right: 5%;
+  right: 15%;
   top: 85%;
 }
 
@@ -394,14 +394,13 @@ main {
   font-style: italic;
 }
 
-/* CONTAINER GERAL (Agora mais largo) */
 .menu-lateral-direita {
   position: fixed;
-  top: 40%;
-  right: -180px; /* Esconde a nova largura total */
+  top: 48%;
+  right: -180px;
   transform: translateY(-50%);
-  width: 180px; /* Aumentei de 150 para 180 para o arco ficar maior */
-  height: 55vh; /* Aumentei um pouco a altura também */
+  width: 200px;
+  height: 45vh;
   z-index: 30;
   transition: right 0.5s ease-in-out;
   display: flex;
@@ -412,10 +411,9 @@ main {
   right: 0;
 }
 
-/* BOTÃO DA SETA */
 .botao-toggle {
   position: absolute;
-  left: -40px;
+  left: -21px;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
@@ -435,8 +433,14 @@ main {
   transition: 0.3s;
 }
 
+.menu-lateral-direita.aberto .botao-toggle {
+  background-color: white;
+  border-radius: 12px;
+}
+
 .menu-lateral-direita.aberto .botao-toggle i {
   transform: rotate(180deg);
+  color: #000;
 }
 
 .arco-container {
@@ -447,11 +451,11 @@ main {
 
 .linha-arco {
   stroke: rgba(255, 255, 255, 0.3);
-  stroke-width: 4;
+  stroke-width: 12;
   stroke-linecap: round;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  transition: stroke-dashoffset 1s ease-in-out;
+  transition: stroke-dashoffset 2s ease-in-out;
 }
 
 .menu-lateral-direita.aberto .linha-arco {
@@ -459,7 +463,6 @@ main {
 }
 
 .numeros-arco {
-  list-style: none;
   width: 100%;
   height: 100%;
   position: absolute;
