@@ -27,34 +27,34 @@ botaoToggleDireita.addEventListener("click", () => {
 
 const bancoDeImagens = {
   branco: {
-    lado: "img/branco 2.webp",
-    frente: "img/branco.webp",
-    tras: "img/branco 2.webp",
-    interno: "img/branco 2.webp",
+    lado: "img/branco 1.webp",
+    frente: "img/branco 2.webp",
+    tras: "img/branco 3.webp",
+    interno: "img/branco 4.webp",
   },
-  roxo: {
-    lado: "img/roxo 2.webp",
-    frente: "img/roxo.webp",
-    tras: "img/roxo 2.png",
-    interno: "img/roxo 2.png",
+  laranja: {
+    lado: "img/laranja 1.webp",
+    frente: "img/laranja 2.webp",
+    tras: "img/laranja 3.webp",
+    interno: "img/laranja 4.webp",
   },
   azul: {
-    lado: "img/azul 2.webp",
-    frente: "img/azul.webp",
-    tras: "img/azul 2.png",
-    interno: "img/azul 2.png",
+    lado: "img/azul 1.webp",
+    frente: "img/azul 2.webp",
+    tras: "img/azul 3.webp",
+    interno: "img/azul 4.webp",
   },
   vermelho: {
-    lado: "img/vermelho 2.webp",
-    frente: "img/vermelho.webp",
-    tras: "img/vermelho 2.png",
-    interno: "img/vermelho 2.png",
+    lado: "img/vermelho 1.webp",
+    frente: "img/vermelho 2.webp",
+    tras: "img/vermelho 3.webp",
+    interno: "img/vermelho 4.webp",
   },
   preto: {
-    lado: "img/preto 2.webp",
-    frente: "img/preto.webp",
-    tras: "img/preto 2.png",
-    interno: "img/preto 2.png",
+    lado: "img/preto 1.webp",
+    frente: "img/preto 2.webp",
+    tras: "img/preto 3.webp",
+    interno: "img/preto 4.webp",
   },
 };
 
@@ -71,11 +71,13 @@ function atualizarCarro() {
 
   imagemInvisivel.src = novaImagemSrc;
 
-  imagemVisivel.classList.remove("ativo");
-  imagemVisivel.classList.add("inativo");
+  imagemInvisivel.onload = () => {
+    imagemVisivel.classList.remove("ativo");
+    imagemVisivel.classList.add("inativo");
 
-  imagemInvisivel.classList.remove("inativo");
-  imagemInvisivel.classList.add("ativo");
+    imagemInvisivel.classList.remove("inativo");
+    imagemInvisivel.classList.add("ativo");
+  };
 }
 
 const bolinhasDeCor = document.querySelectorAll(".cor");

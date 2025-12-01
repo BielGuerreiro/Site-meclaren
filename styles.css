@@ -105,23 +105,33 @@ main {
 .container-carro {
   position: relative;
   width: 100%;
-  margin-left: 45%;
-  margin-top: -200px;
+  height: 60vh;
+  margin-top: -15vh;
+  margin-left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 5% 5% 5%;
   pointer-events: none;
   user-select: none;
   z-index: 5;
 }
 
+/* AS IMAGENS */
 .carro-fade {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
   height: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
   display: block;
-  transition: opacity 0.5s ease-in-out;
-  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.1));
+  transition: opacity 0.8s ease-in-out;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3));
 }
 
 .carro-fade.ativo {
