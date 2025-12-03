@@ -27,33 +27,33 @@ botaoToggleDireita.addEventListener("click", () => {
 
 const bancoDeImagens = {
   branco: {
-    lado: "img/branco 1.webp",
-    frente: "img/branco 2.webp",
-    tras: "img/branco 3.webp",
+    lado: "img/branco-lado.webp",
+    frente: "img/branco-frente.webp",
+    tras: "img/branco-tras.webp",
     interno: "img/branco 4.webp",
   },
   laranja: {
-    lado: "img/laranja 1.webp",
-    frente: "img/laranja 2.webp",
-    tras: "img/laranja 3.webp",
+    lado: "img/laranja-lado.webp",
+    frente: "img/laranja-frente.webp",
+    tras: "img/laranja-tras.webp",
     interno: "img/laranja 4.webp",
   },
   azul: {
-    lado: "img/azul 1.webp",
-    frente: "img/azul 2.webp",
-    tras: "img/azul 3.webp",
+    lado: "img/azul-lado.webp",
+    frente: "img/azul-frente.webp",
+    tras: "img/azul-tras.webp",
     interno: "img/azul 4.webp",
   },
   vermelho: {
-    lado: "img/vermelho 1.webp",
-    frente: "img/vermelho 2.webp",
-    tras: "img/vermelho 3.webp",
+    lado: "img/vermelho-lado.webp",
+    frente: "img/vermelho-frente.webp",
+    tras: "img/vermelho-tras.webp",
     interno: "img/vermelho 4.webp",
   },
   preto: {
-    lado: "img/preto 1.webp",
-    frente: "img/preto 2.webp",
-    tras: "img/preto 3.webp",
+    lado: "img/preto-lado.webp",
+    frente: "img/preto-frente.webp",
+    tras: "img/preto-tras.webp",
     interno: "img/preto 4.webp",
   },
 };
