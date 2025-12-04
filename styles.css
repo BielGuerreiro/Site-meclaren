@@ -33,7 +33,6 @@ header {
   position: absolute;
   top: 6%;
   right: 9%;
-  width: 8%;
 }
 
 .logo img {
@@ -118,7 +117,6 @@ main {
   z-index: 5;
 }
 
-/* AS IMAGENS */
 .carro-fade {
   position: absolute;
   max-width: 90%;
@@ -546,4 +544,172 @@ main {
   color: #ff0000;
   transform: scale(1.3);
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  .menu {
+    top: 7%;
+    left: 7%;
+  }
+
+  .menu ul {
+    gap: 60px;
+  }
+
+  .menu ul a {
+    font-size: 13px;
+  }
+
+  .logo {
+    top: 2%;
+    left: 2%;
+  }
+
+  .logo img {
+    width: 20vh;
+  }
+
+  .titulo {
+    top: 43%;
+  }
+
+  .container-carro {
+    margin-top: -50vh;
+  }
+
+  .carro-fade[src*="tras"],
+  .carro-fade[src*=" 3."] {
+    margin-left: 10px;
+  }
+
+  .info-texto {
+    top: 60%;
+    left: 20%;
+  }
+
+  .info-texto h2 {
+    font-size: 18px;
+  }
+
+  .info-texto h3 {
+    font-size: 18px;
+  }
+
+  .barra-progresso {
+    left: 8%;
+    top: 15%;
+  }
+
+  .bx-menu-left {
+    font-size: 1.5em;
+  }
+
+  .barra-progresso.aberto .icone-topo::after {
+    height: 80px;
+  }
+
+  .barra-progresso.aberto .lista-cores {
+    margin-top: 80px;
+  }
+
+  .cor {
+    width: 23px;
+    height: 23px;
+  }
+
+  .menu-lateral-direita {
+    top: 27%;
+    right: -180px;
+    width: 100px;
+    height: 30vh;
+  }
+
+  .botao-toggle {
+    left: -110px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-lateral-direita.aberto .botao-toggle {
+    margin-left: 80px;
+  }
+
+  .linha-arco {
+    stroke-width: 10;
+  }
+
+  .numeros-arco li {
+    font-size: 18px;
+  }
+
+  .numeros-arco li:nth-child(1) {
+    top: 5%;
+    left: 40px;
+  }
+  .numeros-arco li:nth-child(2) {
+    top: 36%;
+    left: 20px;
+  }
+  .numeros-arco li:nth-child(3) {
+    top: 62%;
+    left: 30px;
+  }
+  .numeros-arco li:nth-child(4) {
+    top: 86%;
+    left: 45px;
+  }
+
+  .container-especificacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    top: 70%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 90%;
+    justify-items: center;
+  }
+
+  .item-especificacao {
+    align-items: center;
+    text-align: center;
+  }
+
+  .rotulo {
+    font-size: 12px;
+  }
+
+  .valor {
+    font-size: 20px;
+  }
+
+  .valor small {
+    font-size: 14px;
+  }
+
+  .guia {
+    right: 15%;
+    top: 85%;
+  }
+
+  .botao a {
+    padding: 10px 20px;
+  }
+
+  .direitos {
+    left: 5%;
+    bottom: 10px;
+    z-index: 5;
+  }
+
+  .direitos p {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .icones {
+    top: 58%;
+  }
 }
