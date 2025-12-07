@@ -32,11 +32,11 @@ header {
 .logo {
   position: absolute;
   top: 6%;
-  right: 9%;
+  left: 80%;
 }
 
 .logo img {
-  width: 150%;
+  width: 25vh;
   height: auto;
 }
 
@@ -549,7 +549,7 @@ main {
 @media (max-width: 850px) {
   .menu {
     top: 7%;
-    left: 7%;
+    left: 0%;
   }
 
   .menu ul {
@@ -570,11 +570,11 @@ main {
   }
 
   .titulo {
-    top: 43%;
+    top: 40%;
   }
 
   .container-carro {
-    margin-top: -50vh;
+    margin-top: -60vh;
   }
 
   .carro-fade[src*="tras"],
@@ -583,7 +583,7 @@ main {
   }
 
   .info-texto {
-    top: 60%;
+    top: 55%;
     left: 20%;
   }
 
@@ -618,7 +618,7 @@ main {
   }
 
   .menu-lateral-direita {
-    top: 27%;
+    top: 23%;
     right: -180px;
     width: 100px;
     height: 30vh;
@@ -664,7 +664,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px 40px;
-    top: 70%;
+    top: 65%;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
@@ -691,7 +691,7 @@ main {
 
   .guia {
     right: 15%;
-    top: 85%;
+    top: 80%;
   }
 
   .botao a {
@@ -711,5 +711,6 @@ main {
 
   .icones {
     top: 58%;
+    left: 5%;
   }
 }
